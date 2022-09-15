@@ -1,0 +1,178 @@
+footer{
+    .section-1{
+        display: flex;
+        justify-content: space-between;
+        padding: 21px 29.6px 19px 79px;
+        background-color: #F2F2F2;
+        div{
+            display: flex;
+            h4{
+                font-family: Georama;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 38px;
+                color: #171717;
+            }
+            h5{
+                font-family: Georama;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 38px;
+                color: #171717;
+            }
+        }
+        .join-community{
+            gap: 24px;
+            align-items: center;
+            button{
+                background-color: #7D039D;
+                height: 56px;
+                width: 193px;
+                border-radius: 67px;
+                padding: 10px;
+                font-family: Georama;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29px;
+                color: #ffffff;
+            }
+        }
+        .connect-with-us{
+            gap: 27.5px;
+            align-items: center;
+            .social-icons{
+                display: flex;
+                gap: 51.57px;
+            }
+        }
+    }
+    .section-2{
+        padding: 0 80px;
+        padding-bottom: 35px;
+        .links{
+            display: flex;
+            gap: 250px;
+            justify-content: center;
+            padding-top: 62px;
+            padding-bottom: 75px;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h3{
+                font-family: Georama;
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 38px;
+                color: #171717;
+                margin-bottom: 39px;
+            }
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 39px;
+                align-items: center;
+                li{
+                    font-family: Georama;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    color: #171717;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .rights{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #EEECEC;
+        padding-top: 27px;
+       p{
+        font-family: Georama;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        white-space: nowrap;
+       }
+       div:nth-child(1){
+        display: flex;
+        gap: 15px
+       }
+       div:nth-child(2){
+        display: flex;
+        gap: 8px;
+       }
+    }
+}
+@media (max-width: 1170px) {
+    footer .section-1 .join-community{
+        flex-direction: column;
+    }
+}
+@media (max-width: 910px) {
+    footer .section-2 {
+        padding: 0 40px;
+        .links{
+            gap: 14%;
+        }
+    }
+    footer .section-1 .connect-with-us{
+        flex-direction: column;
+    }
+    footer .section-1{
+        padding-right: 79px;
+    }
+}
+@media (max-width: 780px) {
+    footer .rights{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 750px) {
+    footer .section-1{
+        padding: 20px 30px;
+        .connect-with-us{
+            gap: 10px;
+        }
+        div{
+            h5{
+                font-size: 24px;
+            }
+        }
+        .join-community {
+            gap: 10px;
+            h4{
+                font-size: 24px;
+            }
+            button{
+                width: 100px;
+                height: 30px;
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width:687px) {
+    footer .section-2 .links{
+        gap: 50px;
+    }
+}
+@media (max-width:587px) {
+    footer .section-2 .links{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 400px) {
+    footer .rights p{
+        font-size: 16px;
+    }
+}

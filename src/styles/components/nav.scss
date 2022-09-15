@@ -1,0 +1,108 @@
+nav{
+    padding: 43px 80px 0 88px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        display: flex;
+        gap: 16px;
+        h6{
+            font-family: Georama;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 38px;
+        }
+    }
+    ul{
+        display: flex;
+        gap: 56px;
+        list-style-type: none;
+        align-items: center;
+        li{
+            font-family: Georama;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            a{
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+    button{
+        height: 56px;
+        width: 198px;
+        border-radius: 67px;
+        padding: 10px;
+        background-color: #7D039D;
+        font-family: Georama;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        color: #ffffff;
+        border: none;
+    }
+}
+.toggle{
+    display: none;
+}
+@media (max-width: 1310px) {
+    nav{
+        padding-left: 30px;
+        padding-right: 30px;
+        ul{
+            gap: 30px;
+        }
+        button{
+            width: 120px;
+        }
+    }
+}
+@media (max-width: 981px){
+    nav ul{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .close{
+        position: fixed;
+        z-index: 9;
+        right: 40px;
+        top: 50px;
+    }
+    .menu{
+        z-index: 9;
+        background-color: #060608;
+        padding-top: 26px;
+        padding-bottom: 36px;
+        position: fixed;
+        width: 100%;
+        top: 107px;
+        left: 0;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 29px;
+        ul{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        button{
+            display: block;
+            width: 198px;
+        }
+    }
+}
+@media (max-width: 440px) {
+    nav{
+        padding-left: 0;
+    }
+}
