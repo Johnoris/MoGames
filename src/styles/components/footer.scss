@@ -114,12 +114,14 @@ footer{
         flex-direction: column;
     }
 }
+@media (max-width: 950px) {
+    footer .section-2 .links{
+        gap: 14%;
+    }
+}
 @media (max-width: 910px) {
     footer .section-2 {
         padding: 0 40px;
-        .links{
-            gap: 14%;
-        }
     }
     footer .section-1 .connect-with-us{
         flex-direction: column;

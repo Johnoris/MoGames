@@ -308,7 +308,7 @@ input ,button{
             margin-bottom: 32px;
         }
         form{
-            padding: 63px 0 69px 0;
+            padding: 63px 20px 69px 20px;
             height: 246px;
             max-width: 1408px;
             border-radius: 19px;
@@ -466,13 +466,21 @@ input ,button{
     }
     .home .news-letter form{
         flex-wrap: wrap;
+        padding-top: 30px;
         div{
             p{
                 padding-left: 10px;
             }
         }
+        button{
+            width: 30%;
+            height: 40px;
+            padding: 0;
+            font-size: 20px;
+        }
         input{
             width: 60%;
+            height: 40px;
             margin-right: 10px;
             margin-left: 10px;
         }
@@ -511,6 +519,7 @@ input ,button{
                 button{
                     height: 40px;
                     padding: 0;
+                    width: 120px;
                 }
             }
             display: flex;
