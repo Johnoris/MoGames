@@ -171,9 +171,6 @@ input ,button{
         .game-card-wrapper{
             display: flex;
             gap: 20px;
-            .img{
-                min-width: 510px;
-            }
         }
         .survival{
             h3{
@@ -542,9 +539,6 @@ input ,button{
             width: 40%;
         }
     }
-    .games{
-        max-width: 80%;
-    }
 }
 @media (max-width: 750px) {
     .home .top-section .main h1{
@@ -659,6 +653,15 @@ input ,button{
             h6{
                 font-size: 20px;
             }
+        }
+    }
+    .games .games-bottom{
+        h4{
+            font-size: 24px;
+        }
+        h5{
+            font-size: 20px;
+            margin-bottom: 0;
         }
     }
 }
