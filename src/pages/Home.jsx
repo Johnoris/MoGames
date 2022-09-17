@@ -185,8 +185,8 @@ const GameAward1 = (props) => {
         {   
             Array1.map((props) => (
                 <SwiperSlide key={props.key}>
-                  <div className='games' style={{width: '80vw'}}>
-                    <img style={{width: '80vw'}} className='img' src={require("../assets/game-img-"+props.src+ ".png")} alt=""/>
+                  <div className='games'>
+                    <img className='img' src={require("../assets/game-img-"+props.src+ ".png")} alt=""/>
                     <div className="games-bottom">
                       <div>
                         <h5>{props.date}</h5>
@@ -220,8 +220,8 @@ const GameAward2 = (props) => {
         {
             Array2.map((props) => (
                 <SwiperSlide key={props.key}>
-                  <div className='img games' style={{width: '80vw'}}>
-                    <img style={{width: '80vw'}} src={require("../assets/game-img-"+props.src+ ".png")} alt=""/>
+                  <div className='img games'>
+                    <img src={require("../assets/game-img-"+props.src+ ".png")} alt=""/>
                     <div className="games-bottom">
                       <div>
                         <h5>{props.date}</h5>
