@@ -463,10 +463,11 @@ input ,button{
     }
     .home .news-letter form{
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding-top: 20px;
         div{
+            margin-bottom: 20px;
             p{
-                padding-left: 10px;
+                text-align: center;
             }
         }
         button{
@@ -503,20 +504,34 @@ input ,button{
     .home {
         .news-letter{
             form{
-                height: auto;
+                padding: 0;
                 width: 380px;
+                height: 393px;
                 background-image: linear-gradient(rgba(47, 42, 38, 0.7), rgba(47, 42, 38, 0.7)), url('../../assets/sm-form-bg.png');
                 background-repeat: no-repeat;
+                flex-wrap: nowrap;
                 flex-direction: column;
-                gap: 30px;
+                div{
+                    margin-bottom: 0;
+                }
+                h2{
+                    font-size: 56px;
+                    line-height: 74px;
+                }
+                p{
+                    margin-top: 4px;
+                }
                 input{
-                    width: 80%;
-                    height: 40px;
+                    width: 90%;
+                    height: 56px;
+                    margin: 0;
+                    margin-top: 48px;
+                    margin-bottom: 24px;
                 }
                 button{
-                    height: 40px;
+                    height: 56px;
                     padding: 0;
-                    width: 120px;
+                    width: 193px;
                 }
             }
             display: flex;
@@ -662,6 +677,51 @@ input ,button{
         h5{
             font-size: 20px;
             margin-bottom: 0;
+        }
+    }
+}
+@media (max-width: 428px) {
+    .home .categories{
+        padding-bottom: 100px;
+    }
+    .home .come-work-with-us{
+        padding: 0;
+        padding: 100px 0;
+        height: 370px;
+        background-image: url('../../assets/sm-work-bg.png');
+        .come-work-with-us-text{
+            height: 195px;
+            h3{
+                font-size: 24px;
+                line-height: 28px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 15px;
+                max-width: 170px;
+                margin-top: 4px;
+            }
+            .d-flex{
+                margin-top: 14px;
+                .openings{
+                    margin-right: 72px;
+                }
+            }
+            h2{
+                font-size: 24px;
+                line-height: 29px;
+                margin-bottom: 4px;
+            }
+            h6{
+                font-size: 12px;
+                line-height: 15.33px;
+            }
+            button{
+                margin-top: 20px;
+                width: 103px;
+                height: 28px;
+                font-size: 12px;
+            }
         }
     }
 }
